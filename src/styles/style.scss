@@ -1,0 +1,14 @@
+@use '../../src/styles/abstract/base' as *;
+@use '../../src/styles/components/nav' as *;
+@use '../../src/styles/components/hero' as *;
+@use '../../src/styles/components/card' as *;
+@use '../../src/styles/components/footer' as *;
+
+
+body {
+    font-family: $font--body-cta;
+    background-color: #ffffff;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $font--body-cta;
+    }
+}
