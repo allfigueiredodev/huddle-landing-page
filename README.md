@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./images/readme-screenshot.png" width="500" height="500"/>
+<img src="src/images/readme-screenshot.png" width="500" height="500"/>
 
 ### Links
 
