@@ -9,6 +9,11 @@
 }
 
 header {
+  background-image: url(../../../src/images/bg-hero-mobile.svg);
+  background-color: hsl(193deg, 100%, 96%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 2rem;
   margin-bottom: 4rem;
 }
 @media screen and (min-width: 1440px) {
@@ -16,36 +21,29 @@ header {
     margin-bottom: 10rem;
   }
 }
-header article {
-  background-image: url(../../../src/images/bg-hero-mobile.svg);
-  background-color: hsl(193deg, 100%, 96%);
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: 2rem;
-}
-header article nav {
+header nav {
   box-sizing: border-box;
   width: 100%;
   padding: 1.5rem 1rem;
   margin-bottom: 3.8rem;
 }
 @media screen and (min-width: 1440px) {
-  header article nav {
+  header nav {
     padding: 3.5rem 5rem;
     margin-bottom: 0.8rem;
   }
 }
 @media screen and (min-width: 1440px) {
-  header article nav img {
+  header nav img {
     width: 200px;
     height: 32px;
   }
 }
-header article nav div {
+header nav div {
   display: flex;
   justify-content: space-between;
 }
-header article nav div button {
+header nav div a {
   background-color: #ffffff;
   min-width: 96px;
   border-radius: 15px;
@@ -55,9 +53,15 @@ header article nav div button {
   padding: 0.4rem 1.4rem;
   color: hsl(192deg, 100%, 9%);
   box-shadow: 0px 0px 12px -5px #aaaaaa;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+header nav div a:hover {
+  opacity: 0.7;
 }
 @media screen and (min-width: 1440px) {
-  header article nav div button {
+  header nav div a {
     min-width: 200px;
     padding: 1.1rem 1.4rem;
     border-radius: 30px;
@@ -118,7 +122,7 @@ header article nav div button {
     padding: 0;
   }
 }
-.hero div button {
+.hero div a {
   background-color: #ff33cc;
   border-radius: 30px;
   color: rgba(255, 255, 255, 0.8784313725);
@@ -128,9 +132,15 @@ header article nav div button {
   max-width: 240px;
   margin: 0 auto 3rem;
   box-shadow: 0px 0px 12px -5px #aaaaaa;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hero div a:hover {
+  background-color: #fe77dd;
 }
 @media screen and (min-width: 1440px) {
-  .hero div button {
+  .hero div a {
     min-width: 280px;
     max-width: 280px;
     padding: 1.1rem 0;
@@ -262,7 +272,7 @@ main .benefits div:not(.text__wrapper) p {
     padding: 0;
   }
 }
-main .benefits div:not(.text__wrapper) button {
+main .benefits div:not(.text__wrapper) a {
   background-color: #ff33cc;
   border-radius: 50px;
   color: rgba(255, 255, 255, 0.8784313725);
@@ -274,6 +284,12 @@ main .benefits div:not(.text__wrapper) button {
   max-width: 198px;
   margin: 0 auto;
   font-size: 0.7rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+main .benefits div:not(.text__wrapper) a:hover {
+  background-color: #fe77dd;
 }
 
 footer {
@@ -382,6 +398,20 @@ footer section .bottom-links ul {
     flex-wrap: wrap;
   }
 }
+footer section .bottom-links ul a {
+  text-decoration: none;
+  color: #ffffff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer section .bottom-links ul a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+footer section .bottom-links ul a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
 footer section .medias {
   display: flex;
   gap: 0.8rem;
@@ -400,6 +430,10 @@ footer section .medias img {
   width: 17px;
   height: 17px;
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(44deg) brightness(104%) contrast(101%);
+}
+footer section .medias img:hover {
+  filter: none;
+  background-color: #ff33cc;
 }
 footer .copyright {
   font-size: 0.7rem;

@@ -90,12 +90,24 @@ footer {
       }
       ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: column;        
         gap: 1.6rem;
         @media screen and(min-width: 1024px) {
           max-height: 110px;
           width: 380px;
           flex-wrap: wrap;
+        }
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          width: fit-content;
+          &:hover {
+            border-bottom: 1px solid #ffffff;
+          }
+          &:visited {
+            text-decoration: none;
+            color: #ffffff;
+          }
         }
       }
     }
@@ -115,6 +127,11 @@ footer {
         height: 17px;
         filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(44deg)
           brightness(104%) contrast(101%);
+          &:hover {
+            filter: none;
+            background-color: $button-pink;
+
+          }
       }
     }
   }

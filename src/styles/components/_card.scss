@@ -101,7 +101,7 @@ main {
         }
       }
 
-      button {
+      a {
         background-color: $button-pink;
         border-radius: 50px;
         color: #ffffffe0;
@@ -113,6 +113,12 @@ main {
         max-width: 198px;
         margin: 0 auto;
         font-size: 0.7rem;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+          background-color: #fe77dd;
+        }
       }
     }
   }
